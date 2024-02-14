@@ -21,7 +21,7 @@ func doInstall() {
 func doUninstall() {
 	if isHookExists() {
 		if isOwnedHook() {
-			log.Println("Installing prepare-commit-msg hook...")
+			log.Println("Uninstalling prepare-commit-msg hook...")
 			if err := removeHookFile(); err != nil {
 				log.Fatal(err)
 			}
